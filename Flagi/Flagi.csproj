@@ -1,0 +1,662 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="flagi\Afganistan.png" />
+      <Content Include="flagi\Afganistan.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Albania.png" />
+      <Content Include="flagi\Albania.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Algieria.png" />
+      <Content Include="flagi\Algieria.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Andora.png" />
+      <Content Include="flagi\Andora.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Angola.png" />
+      <Content Include="flagi\Angola.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Anguilli.png" />
+      <Content Include="flagi\Anguilli.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Antarktyda.png" />
+      <Content Include="flagi\Antarktyda.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\ArabiaSaudyjska.png" />
+      <Content Include="flagi\ArabiaSaudyjska.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Argentyna.png" />
+      <Content Include="flagi\Argentyna.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Armenia.png" />
+      <Content Include="flagi\Armenia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Aruba.png" />
+      <Content Include="flagi\Aruba.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Australia.png" />
+      <Content Include="flagi\Australia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Austria.png" />
+      <Content Include="flagi\Austria.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Azerbejdzan.png" />
+      <Content Include="flagi\Azerbejdzan.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Bahamy.png" />
+      <Content Include="flagi\Bahamy.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Bahrajn.png" />
+      <Content Include="flagi\Bahrajn.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Bangladesz.png" />
+      <Content Include="flagi\Bangladesz.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Barbados.png" />
+      <Content Include="flagi\Barbados.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Belgia.png" />
+      <Content Include="flagi\Belgia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Belize.png" />
+      <Content Include="flagi\Belize.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Benin.png" />
+      <Content Include="flagi\Benin.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Bermudy.png" />
+      <Content Include="flagi\Bermudy.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Bhutan.png" />
+      <Content Include="flagi\Bhutan.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Bialorus.png" />
+      <Content Include="flagi\Bialorus.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Boliwia.png" />
+      <Content Include="flagi\Boliwia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Bonaire.png" />
+      <Content Include="flagi\Bonaire.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\BosniaHercegowina.png" />
+      <Content Include="flagi\BosniaHercegowina.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Botswana.png" />
+      <Content Include="flagi\Botswana.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Brazylia.png" />
+      <Content Include="flagi\Brazylia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\BruneiDarussalam.png" />
+      <Content Include="flagi\BruneiDarussalam.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\BrytyjskieWyspyDziewicze.png" />
+      <Content Include="flagi\BrytyjskieWyspyDziewicze.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Bulgaria.png" />
+      <Content Include="flagi\Bulgaria.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\BurkinaFaso.png" />
+      <Content Include="flagi\BurkinaFaso.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Canada.png" />
+      <Content Include="flagi\Canada.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Chile.png" />
+      <Content Include="flagi\Chile.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Chiny.png" />
+      <Content Include="flagi\Chiny.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Chorwacja.png" />
+      <Content Include="flagi\Chorwacja.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Cuba.png" />
+      <Content Include="flagi\Cuba.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Curaçao.png" />
+      <Content Include="flagi\Curaçao.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Czarnogora.png" />
+      <Content Include="flagi\Czarnogora.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Czechy.png" />
+      <Content Include="flagi\Czechy.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Dania.png" />
+      <Content Include="flagi\Dania.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\DemokratycznaRepublikaKongo.png" />
+      <Content Include="flagi\DemokratycznaRepublikaKongo.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Dominika.png" />
+      <Content Include="flagi\Dominika.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Dominikana.png" />
+      <Content Include="flagi\Dominikana.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Dzibuti.png" />
+      <Content Include="flagi\Dzibuti.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Egipt.png" />
+      <Content Include="flagi\Egipt.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Ekwador.png" />
+      <Content Include="flagi\Ekwador.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Erytrea.png" />
+      <Content Include="flagi\Erytrea.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Estonia.png" />
+      <Content Include="flagi\Estonia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Etiopia.png" />
+      <Content Include="flagi\Etiopia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Falklandy.png" />
+      <Content Include="flagi\Falklandy.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Fidzi.png" />
+      <Content Include="flagi\Fidzi.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Finlandia.png" />
+      <Content Include="flagi\Finlandia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Francja.png" />
+      <Content Include="flagi\Francja.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Gambia.png" />
+      <Content Include="flagi\Gambia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Ghana.png" />
+      <Content Include="flagi\Ghana.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Giblartar.png" />
+      <Content Include="flagi\Giblartar.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Grecja.png" />
+      <Content Include="flagi\Grecja.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Grenada.png" />
+      <Content Include="flagi\Grenada.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Grenlandia.png" />
+      <Content Include="flagi\Grenlandia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Gruzja.png" />
+      <Content Include="flagi\Gruzja.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Guam.png" />
+      <Content Include="flagi\Guam.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Guyana.png" />
+      <Content Include="flagi\Guyana.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Gwatemala.png" />
+      <Content Include="flagi\Gwatemala.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Gwinea.png" />
+      <Content Include="flagi\Gwinea.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\GwineaBissau.png" />
+      <Content Include="flagi\GwineaBissau.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Haiti.png" />
+      <Content Include="flagi\Haiti.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Hiszpania.png" />
+      <Content Include="flagi\Hiszpania.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Holadnia.png" />
+      <Content Include="flagi\Holadnia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Honduras.png" />
+      <Content Include="flagi\Honduras.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\HongKong.png" />
+      <Content Include="flagi\HongKong.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Iceland.png" />
+      <Content Include="flagi\Iceland.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Indie.png" />
+      <Content Include="flagi\Indie.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Indonesia.png" />
+      <Content Include="flagi\Indonesia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Irak.png" />
+      <Content Include="flagi\Irak.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Iran.png" />
+      <Content Include="flagi\Iran.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Irlandia.png" />
+      <Content Include="flagi\Irlandia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Izrael.png" />
+      <Content Include="flagi\Izrael.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Jamaica.png" />
+      <Content Include="flagi\Jamaica.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Japonia.png" />
+      <Content Include="flagi\Japonia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Jemen.png" />
+      <Content Include="flagi\Jemen.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Jersey.png" />
+      <Content Include="flagi\Jersey.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Jordan.png" />
+      <Content Include="flagi\Jordan.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kajmany.png" />
+      <Content Include="flagi\Kajmany.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kambodza.png" />
+      <Content Include="flagi\Kambodza.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kamerun.png" />
+      <Content Include="flagi\Kamerun.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kazahstan.png" />
+      <Content Include="flagi\Kazahstan.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kenia.png" />
+      <Content Include="flagi\Kenia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kirgistan.png" />
+      <Content Include="flagi\Kirgistan.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kiribati.png" />
+      <Content Include="flagi\Kiribati.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kolumbia.png" />
+      <Content Include="flagi\Kolumbia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Komory.png" />
+      <Content Include="flagi\Komory.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kongo.png" />
+      <Content Include="flagi\Kongo.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\KoreaPolnocna.png" />
+      <Content Include="flagi\KoreaPolnocna.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\KoreaPoudniowa.png" />
+      <Content Include="flagi\KoreaPoudniowa.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kosowo.png" />
+      <Content Include="flagi\Kosowo.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kostaryka.png" />
+      <Content Include="flagi\Kostaryka.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Kuwejt.png" />
+      <Content Include="flagi\Kuwejt.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Lesotho.png" />
+      <Content Include="flagi\Lesotho.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Liban.png" />
+      <Content Include="flagi\Liban.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Liberia.png" />
+      <Content Include="flagi\Liberia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Libia.png" />
+      <Content Include="flagi\Libia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Liechtenstein.png" />
+      <Content Include="flagi\Liechtenstein.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Litwa.png" />
+      <Content Include="flagi\Litwa.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Lotwa.png" />
+      <Content Include="flagi\Lotwa.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Luksemburg.png" />
+      <Content Include="flagi\Luksemburg.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Macedonia.png" />
+      <Content Include="flagi\Macedonia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Madagaskar.png" />
+      <Content Include="flagi\Madagaskar.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Maroko.png" />
+      <Content Include="flagi\Maroko.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Meksyk.png" />
+      <Content Include="flagi\Meksyk.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Moldawia.png" />
+      <Content Include="flagi\Moldawia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Niemcy.png" />
+      <Content Include="flagi\Niemcy.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Nigeria.png" />
+      <Content Include="flagi\Nigeria.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Norwegia.png" />
+      <Content Include="flagi\Norwegia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Polska.png" />
+      <Content Include="flagi\Polska.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Portugalia.png" />
+      <Content Include="flagi\Portugalia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\RepublikaPoludniowejAfryki.png" />
+      <Content Include="flagi\RepublikaPoludniowejAfryki.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\RepublikaSrodkowoAfrykanska.png" />
+      <Content Include="flagi\RepublikaSrodkowoAfrykanska.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Rosja.png" />
+      <Content Include="flagi\Rosja.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Rumunia.png" />
+      <Content Include="flagi\Rumunia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Samoa.png" />
+      <Content Include="flagi\Samoa.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Scotland.png" />
+      <Content Include="flagi\Scotland.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\SriLanka.png" />
+      <Content Include="flagi\SriLanka.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\StanyZjednoczone.png" />
+      <Content Include="flagi\StanyZjednoczone.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Szwajcaria.png" />
+      <Content Include="flagi\Szwajcaria.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Szwecja.png" />
+      <Content Include="flagi\Szwecja.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Tadzykistan.png" />
+      <Content Include="flagi\Tadzykistan.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Taiwan.png" />
+      <Content Include="flagi\Taiwan.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Tajlandia.png" />
+      <Content Include="flagi\Tajlandia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Tanzania.png" />
+      <Content Include="flagi\Tanzania.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Thumbs.db" />
+      <Content Include="flagi\Thumbs.db">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\TimorWschodni.png" />
+      <Content Include="flagi\TimorWschodni.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Togo.png" />
+      <Content Include="flagi\Togo.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Tokelau.png" />
+      <Content Include="flagi\Tokelau.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\TrynidadTobago.png" />
+      <Content Include="flagi\TrynidadTobago.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Tunezja.png" />
+      <Content Include="flagi\Tunezja.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Turcja.png" />
+      <Content Include="flagi\Turcja.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Turkmenistan.png" />
+      <Content Include="flagi\Turkmenistan.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Uganda.png" />
+      <Content Include="flagi\Uganda.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Ukraina.png" />
+      <Content Include="flagi\Ukraina.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Urugwaj.png" />
+      <Content Include="flagi\Urugwaj.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Uzbekistan.png" />
+      <Content Include="flagi\Uzbekistan.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Vanuatu.png" />
+      <Content Include="flagi\Vanuatu.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\WallisFutuna.png" />
+      <Content Include="flagi\WallisFutuna.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Wegry.png" />
+      <Content Include="flagi\Wegry.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Wenezuela.png" />
+      <Content Include="flagi\Wenezuela.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\WielkaBrytania.png" />
+      <Content Include="flagi\WielkaBrytania.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Wietnam.png" />
+      <Content Include="flagi\Wietnam.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Wlochy.png" />
+      <Content Include="flagi\Wlochy.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\WybrzezeKosciSloniowej.png" />
+      <Content Include="flagi\WybrzezeKosciSloniowej.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\WyspaCooka.png" />
+      <Content Include="flagi\WyspaCooka.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\WyspyDziewicze.png" />
+      <Content Include="flagi\WyspyDziewicze.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\WyspyKokosowe.png" />
+      <Content Include="flagi\WyspyKokosowe.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\WyspyMarshalla.png" />
+      <Content Include="flagi\WyspyMarshalla.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\WyspyOwcze.png" />
+      <Content Include="flagi\WyspyOwcze.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\WyspyZielonegoPrzyladka.png" />
+      <Content Include="flagi\WyspyZielonegoPrzyladka.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\WysypyBozegoNarodzenia.png" />
+      <Content Include="flagi\WysypyBozegoNarodzenia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Zambia.png" />
+      <Content Include="flagi\Zambia.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="flagi\Zimbabwe.png" />
+      <Content Include="flagi\Zimbabwe.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Countries.json" />
+      <Content Include="Countries.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+</Project>
