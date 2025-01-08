@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 
@@ -18,6 +19,8 @@ public partial class GameWindow : Window
     {
         InitializeComponent();
 
+        NickLabel.Content = GameData.UserName;
+
         timer.Interval = TimeSpan.FromSeconds(1);
         timer.Tick += TimerOnTick;
         timer.Start();
@@ -34,14 +37,19 @@ public partial class GameWindow : Window
 
     private void StartRound()
     {
-        if (roundNumber > 10)
+        if (roundNumber >= 10)
         {
-            Console.WriteLine("Koniec gry! Twój wynik to: " + GameData.Score);
+            timer.Stop();
+            GameData.TimePlayed = $"{secondsPlayed.Minutes:00}:{secondsPlayed.Seconds:00}";
+            ResultWindow resultWindow = new ResultWindow();
+            resultWindow.Show();
+            this.Close();
         }
         else
         {
             roundNumber++;
         }
+        RoundLabel.Content = $"Runda {roundNumber}/10";
         List<Country> roundSet = new List<Country>();
 
         while (roundSet.Count < 4)
@@ -65,24 +73,24 @@ public partial class GameWindow : Window
     private void TimerOnTick(object? sender, EventArgs e)
     {
         secondsPlayed = secondsPlayed.Add(TimeSpan.FromSeconds(1));
-        TimeLabel.Content = $"{secondsPlayed.Minutes:00}:{secondsPlayed.Seconds:00}";
+        TimeLabel.Content = $"Czas: {secondsPlayed.Minutes:00}:{secondsPlayed.Seconds:00}";
     }
 
     private void OptionButtonClick(object sender, RoutedEventArgs e)
     {
         var button = (Button)sender;
 
-
-
         if (button.Content.ToString() == correctCountry.CountryName)
         {
-            MessageBox.Show($"Dobrze!");
+            AnswerLabel.Content = "Brawo! Poprawna odpowiedź!";
+            AnswerLabel.Background = Brushes.LimeGreen;
             GameData.Score += 1;
             StartRound();
         }
         else
         {
-            MessageBox.Show($"Źle! Poprawna odpowiedź to: {correctCountry.CountryName}");
+            AnswerLabel.Content = $"Zła odpowiedź! Poprawna odpowiedź to: {correctCountry.CountryName}";
+            AnswerLabel.Background = Brushes.OrangeRed;
             StartRound();
         }
     }

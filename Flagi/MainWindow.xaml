@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Flagi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="300">
+        Title="WITAJ W GRAMY WE FLAGI" Height="300" Width="300">
     <StackPanel>
-        <Label Content="Gramy we flaagi" />
-        <Label Content="Wprowadź swój nick" />
-        <TextBox x:Name="NickNameInput" />
-        <Button Content="Rozpocznij Grę" Click="StartGame" />
+        <StackPanel Grid.Row="0" Background="Coral">
+            <Label Content="GRAMY WE FLAGI" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="30" />
+        </StackPanel>
+        <StackPanel Margin="30">
+            <Label Content="Wprowadź swój nick" HorizontalAlignment="Center" />
+            <TextBox x:Name="NickNameInput" Margin="0, 5" Padding="5" />
+            <Button Content="Rozpocznij Grę" Width="150" Margin="0, 15, 0, 0" Click="StartGame" Style="{StaticResource ButtonStyle}" />
+        </StackPanel>
     </StackPanel>
 </Window>

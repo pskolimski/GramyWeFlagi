@@ -8,6 +8,7 @@ public static class GameData
     public static string UserName { get; set; }
     public static List<Country> Countries { get; set; } = new List<Country>();
     public static int Score { get; set; }
+    public static string TimePlayed { get; set; }
 
     static GameData()
     {

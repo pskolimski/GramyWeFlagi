@@ -5,30 +5,51 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:Flagi"
         mc:Ignorable="d"
-        Title="GameWindow" Height="450" Width="800">
+        Title="GRAMY WE FLAGI" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0">
-            <Label Content="Gramy we flaagi" />
+        <StackPanel Grid.Row="0" Background="Coral">
+            <StackPanel Margin="15">
+                <Label Content="GRAMY WE FLAGI" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <Label Name="NickLabel" Content="Twój nick" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </StackPanel>
         </StackPanel>
 
-        <StackPanel Grid.Row="1">
-            <Image x:Name="FlagImage" Width="300px" />
-        </StackPanel>
-        <StackPanel Grid.Row="2">
-            <Button Content="Odpowiedź A" x:Name="Option1" Click="OptionButtonClick" />
-            <Button Content="Odpowiedź B" x:Name="Option2" Click="OptionButtonClick" />
-            <Button Content="Odpowiedź C" x:Name="Option3" Click="OptionButtonClick" />
-            <Button Content="Odpowiedź D" x:Name="Option4" Click="OptionButtonClick" />
-        </StackPanel>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Name="RoundLabel"  Content="Pytanie 1/10" />
+            <Label Grid.Column="1" Name="AnswerLabel" Padding="5" HorizontalAlignment="Center" />
+        </Grid>
+
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                <Image x:Name="FlagImage" Width="200px" Margin="15" Source="flagi/Albania.png" VerticalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="30">
+                <Button Content="Odpowiedź A" x:Name="Option1" Click="OptionButtonClick" Margin="5" Style="{StaticResource ButtonStyle}" />
+                <Button Content="Odpowiedź B" x:Name="Option2" Click="OptionButtonClick" Margin="5" Style="{StaticResource ButtonStyle}" />
+                <Button Content="Odpowiedź C" x:Name="Option3" Click="OptionButtonClick" Margin="5" Style="{StaticResource ButtonStyle}" />
+                <Button Content="Odpowiedź D" x:Name="Option4" Click="OptionButtonClick" Margin="5" Style="{StaticResource ButtonStyle}" />
+            </StackPanel>
+        </Grid>
         <StackPanel Grid.Row="3">
-            <Label x:Name="TimeLabel" Content="00:00" />
+            <Label x:Name="TimeLabel" Content="Czas: 00:00" />
         </StackPanel>
     </Grid>
 </Window>
